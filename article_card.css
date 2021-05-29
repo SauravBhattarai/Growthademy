@@ -4,13 +4,12 @@
   box-sizing: border-box;
 }
 
-.container {
+/* .container {
   width: 25%;
   margin: 12% auto;
-}
+} */
 
 .article-card {
-  width: 100%;
   background: #fcfcf9;
   box-shadow: 6px 7px 16px rgba(0, 0, 0, 0.25);
   border-radius: 1.3em;
@@ -56,7 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.25em 0;
+  padding: 0.25em 0.5em;
   cursor: pointer;
 }
 
