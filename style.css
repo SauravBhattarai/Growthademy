@@ -308,22 +308,19 @@ section {
 
 #article-heading {
   background: linear-gradient(270.02deg, #922423 5.58%, #202c3c 117.11%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
 #audio-heading {
   background: #eedadb;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
 #video-heading {
   background: linear-gradient(90.04deg, #37b84c -10.61%, #d9d9d9 110.59%);
+}
+
+#article-heading,
+#audio-heading,
+#video-heading {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;

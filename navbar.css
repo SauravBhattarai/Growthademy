@@ -38,6 +38,11 @@ li {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Class to use when a div needs to be flexed evenly */
 .flex-evenly {
   display: flex;

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="audio.css">
+    <link rel="stylesheet" href="selectionbar.css">
+    <link rel="stylesheet" href="audio_card.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+            <div class="logo">
+                <img src="./resources/images/logo/logo_2.png" alt="growthademy logo" class="logo_image">
+            </div>
+
+            <ul class="nav-links flex-evenly">
+                <li class="links" id="home_link"><a href="./index.html">Home</a></li>
+                <li class="links" id="articles_link"><a href="./article.html">Articles</a></li>
+                <li class="links" id="videos_link"><a href="./video.html">Videos</a></li>
+                <li class="links selected" id="audios_link"><a href="./audio.html">Audios</a></li>
+            </ul>
+
+            <ul class="contact-links flex-evenly">
+                <li><i class="fab fa-instagram contacts" id="instagram"></i></li>
+                <li><i class="fab fa-facebook-f contacts" id="facebook"></i></li>
+                <li><i class="fab fa-youtube contacts" id="youtube"></i></li>
+                <li><i class="fab fa-tiktok"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+            
+
+            <!-- Hamburger for smaller screens only -->
+            <!-- <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div> -->
+            </div>
+        </nav>
+    </header>
+
+    <section id="top-content">
+        <img class="thumbnail-top-image" src="./resources/images/podcast.jpg" alt="Video Thumbnail">
+        <p class="thumbnail-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia cum odit, minima natus blanditiis deserunt nam ratione ullam eveniet sequi exercitationem facere quaerat in aperiam
+        </p>
+    </section>
+
+    <svg id="top_svg" viewBox="0 0 1440 846" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- <svg id="top_svg" width="1440" height="846" viewBox="0 0 1440 846" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+        <g filter="url(#filter0_d)">
+        <path d="M591 45.2452C393 3.24519 118.5 154.079 6 234.745V635.245C348.5 666.745 283 714.245 430.5 769.745C578 825.245 989 722.245 1049.5 651.245C1097.9 594.445 1329.67 651.912 1439.5 687.745V266.245C1397.33 285.579 1270.3 312.645 1099.5 266.245C886 208.245 838.5 97.7452 591 45.2452Z" fill="#D1CEC5"/>
+        </g>
+        <defs>
+        <filter id="filter0_d" x="-52" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <!-- <filter id="filter0_d" x="-52" y="0" width="1531.5" height="845.55" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> -->
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+        <feOffset dx="-9" dy="11"/>
+        <feGaussianBlur stdDeviation="24.5"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        </defs>
+    </svg>
+
+    <section id="selection-bar">
+        <h2 class="heading">Audios</h2>
+        <div class="options">
+            <li class="select-options selected-option" id="all">All</li>
+            <li class="select-options" id="latest">Latest</li>
+            <li class="select-options" id="featured">Featured</li>
+            <li class="select-options" id="media">Media</li>
+            <li class="select-options" id="tech">tech</li>
+        </div>
+    </section>
+
+    <main class="cards-grid">
+        <div class="card">
+            <div class="inner-container">
+                <div class="audio-button">
+                    <img src="./resources/images/multimedia.png" alt="" class="play-button">
+                </div>
+                <div class="content">
+                    <h2 class="title">
+                        Lorem Ipsum isak
+                    </h2>
+                    <div class="content-info">
+                        <p class="date">May 25, 2021</p>
+                        <p class="length">30 m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="inner-container">
+                <div class="audio-button">
+                    <img src="./resources/images/multimedia.png" alt="" class="play-button">
+                </div>
+                <div class="content">
+                    <h2 class="title">
+                        Lorem Ipsum isak
+                    </h2>
+                    <div class="content-info">
+                        <p class="date">May 25, 2021</p>
+                        <p class="length">30 m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-container">
+                <div class="audio-button">
+                    <img src="./resources/images/multimedia.png" alt="" class="play-button">
+                </div>
+                <div class="content">
+                    <h2 class="title">
+                        Lorem Ipsum isak
+                    </h2>
+                    <div class="content-info">
+                        <p class="date">May 25, 2021</p>
+                        <p class="length">30 m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-container">
+                <div class="audio-button">
+                    <img src="./resources/images/multimedia.png" alt="" class="play-button">
+                </div>
+                <div class="content">
+                    <h2 class="title">
+                        Lorem Ipsum isak
+                    </h2>
+                    <div class="content-info">
+                        <p class="date">May 25, 2021</p>
+                        <p class="length">30 m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-container">
+                <div class="audio-button">
+                    <img src="./resources/images/multimedia.png" alt="" class="play-button">
+                </div>
+                <div class="content">
+                    <h2 class="title">
+                        Lorem Ipsum isak
+                    </h2>
+                    <div class="content-info">
+                        <p class="date">May 25, 2021</p>
+                        <p class="length">30 m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-container">
+                <div class="audio-button">
+                    <img src="./resources/images/multimedia.png" alt="" class="play-button">
+                </div>
+                <div class="content">
+                    <h2 class="title">
+                        Lorem Ipsum isak
+                    </h2>
+                    <div class="content-info">
+                        <p class="date">May 25, 2021</p>
+                        <p class="length">30 m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button class="showMoreBtn">Load More</button>
+
+
+    <footer id="footer">
+        <div class="footer-div">
+            <ul class="contact-links flex-evenly">
+                <li><i class="fab fa-instagram contacts" id="instagram"></i></li>
+                <li><i class="fab fa-facebook-f contacts" id="facebook"></i></li>
+                <li><i class="fab fa-youtube contacts" id="youtube"></i></li>
+                <li><i class="fab fa-tiktok"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+            <h3 class="footer-heading">GROWTHADEMY</h3>
+            <p class="copywright">All Rights Reserved</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
