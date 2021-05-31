@@ -77,7 +77,7 @@ main {
   margin: 2em auto;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 0.7fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
   grid-gap: 2.5em;
 
   justify-content: center;
