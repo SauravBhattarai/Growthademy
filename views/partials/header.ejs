@@ -4,12 +4,24 @@
         <div class="logo">
             <img src="/images/logo/logo_1.jpg" alt="growthademy logo" class="logo_image">
         </div>
-
+        <% const navItems = ["home", "articles", "videos", "audios"] %>
         <ul class="nav-links flex-evenly">
-            <li class="links selected" id="home_link"><a href="/">Home</a></li>
-            <li class="links" id="articles_link"><a href="/articles">Articles</a></li>
-            <li class="links" id="videos_link"><a href="/videos">Videos</a></li>
-            <li class="links" id="audios_link"><a href="/audios">Audios</a></li>
+            <% navItems.forEach(navlink => { %>
+                <% if(navlink == navSelectTitle) { %>
+                    <% if (navlink == "home") {%>
+                        <li class="links selected"><a href="/"><%= navlink %></a></li>
+                    <% } else {%>
+                        <li class="links selected"><a href="/<%= navlink %>"><%= navlink %></a></li>
+                    <% } %>
+                <% } else { %>
+                    <% if (navlink == "home") {%>
+                        <li class="links"><a href="/"><%= navlink %></a></li>
+                    <% } else {%>
+                        <li class="links"><a href="/<%= navlink %>"><%= navlink %></a></li>
+                    <% } %>
+                    <!-- <li class="links"><a href="/<%= navlink %>"><%= navlink %></a></li> -->
+                <% } %>
+            <% }) %>
         </ul>
 
         <ul class="contact-links flex-evenly">

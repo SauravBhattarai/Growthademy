@@ -42,6 +42,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  text-transform: capitalize;
 }
 
 /* Class to use when a div needs to be flexed evenly */

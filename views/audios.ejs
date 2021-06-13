@@ -36,107 +36,24 @@
     <%- include('partials/selectionbar') %>
 
     <main class="cards-grid">
-        <div class="card">
-            <div class="inner-container">
-                <div class="audio-button">
-                    <img src="/images/multimedia.png" alt="" class="play-button">
-                </div>
-                <div class="content">
-                    <h2 class="title">
-                        Lorem Ipsum isak
-                    </h2>
-                    <div class="content-info">
-                        <p class="date">May 25, 2021</p>
-                        <p class="length">30 m</p>
+        <% for (var i = 0; i < cardsno; i++) { %>
+            <div class="card">
+                <div class="inner-container">
+                    <div class="audio-button">
+                        <img src="/images/multimedia.png" alt="" class="play-button">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">
+                            Lorem Ipsum isak
+                        </h2>
+                        <div class="content-info">
+                            <p class="date">May 25, 2021</p>
+                            <p class="length">30 m</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="card">
-            <div class="inner-container">
-                <div class="audio-button">
-                    <img src="images/multimedia.png" alt="" class="play-button">
-                </div>
-                <div class="content">
-                    <h2 class="title">
-                        Lorem Ipsum isak
-                    </h2>
-                    <div class="content-info">
-                        <p class="date">May 25, 2021</p>
-                        <p class="length">30 m</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="inner-container">
-                <div class="audio-button">
-                    <img src="images/multimedia.png" alt="" class="play-button">
-                </div>
-                <div class="content">
-                    <h2 class="title">
-                        Lorem Ipsum isak
-                    </h2>
-                    <div class="content-info">
-                        <p class="date">May 25, 2021</p>
-                        <p class="length">30 m</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="inner-container">
-                <div class="audio-button">
-                    <img src="images/multimedia.png" alt="" class="play-button">
-                </div>
-                <div class="content">
-                    <h2 class="title">
-                        Lorem Ipsum isak
-                    </h2>
-                    <div class="content-info">
-                        <p class="date">May 25, 2021</p>
-                        <p class="length">30 m</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="inner-container">
-                <div class="audio-button">
-                    <img src="images/multimedia.png" alt="" class="play-button">
-                </div>
-                <div class="content">
-                    <h2 class="title">
-                        Lorem Ipsum isak
-                    </h2>
-                    <div class="content-info">
-                        <p class="date">May 25, 2021</p>
-                        <p class="length">30 m</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="inner-container">
-                <div class="audio-button">
-                    <img src="images/multimedia.png" alt="" class="play-button">
-                </div>
-                <div class="content">
-                    <h2 class="title">
-                        Lorem Ipsum isak
-                    </h2>
-                    <div class="content-info">
-                        <p class="date">May 25, 2021</p>
-                        <p class="length">30 m</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <% } %>
     </main>
 
     <button class="showMoreBtn">Load More</button>
