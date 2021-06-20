@@ -40,12 +40,14 @@
     <button class="showMoreBtn">Load More</button>
 
     <section id="submitbox">
-        <h2 class="title">Do you Want To Submit Something?</h2>
-        <input type="text" name="name" id="username" placeholder="Enter your name">
-        <input type="email" name="email" id="useremail" placeholder="Enter your email address">
-        <textarea name="content" id="usercontent" cols="100" rows="3" placeholder="Type here"></textarea>
-        <input type="file" name="file" id="userfile">
-        <button class="submitBtn" type="submit">Submit</button>
+        <form action="" method="POST">
+            <h2 class="title">Do you Want To Submit Something?</h2>
+            <input type="text" name="name" id="username" placeholder="Enter your name">
+            <input type="email" name="email" id="useremail" placeholder="Enter your email address">
+            <textarea name="content" id="usercontent" cols="100" rows="3" placeholder="Type here"></textarea>
+            <input type="file" name="file" id="userfile">
+            <button class="submitBtn" type="submit">Submit</button>
+        </form>
     </section>
 
     <%- include('partials/footer') %>

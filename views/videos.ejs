@@ -36,27 +36,43 @@
     <%- include('partials/selectionbar') %>
 
     <main class="cards-grid">
-        <% for (var i = 0; i < cardsno; i++) { %>
-            <div class="card">
-                <div class="thumbnail-div">
-                    <img class="thumbnail-image" src="/images/thumbnail_1.png" alt="Video Thumbnail">
-                </div>
-                <div class="body-div">
-                    <h2 class="title">
-                        Lorem ipsum dolor sit amet adipiscing elit. 
-                    </h2>
-                    <div class="bottom-div">
-                        <div class="video-info">
-                            <p class="length">1 hr 34s</p>
-                            <p class="date">May 25, 2021</p>
-                        </div>
-                        <div class="video-button">
-                            <img src="/images/play_button.png" alt="" class="play-button">
+
+        <% if (videos.length > 0) {%>
+            <% videos.forEach(video => { %>
+                <div class="card">
+                    <div class="thumbnail-div">
+                        <img class="thumbnail-image" src="/images/thumbnail_1.png" alt="Video Thumbnail">
+                    </div>
+                    <div class="body-div">
+                        <h2 class="title">
+                            <%= video.title %>
+                        </h2>
+                        <div class="bottom-div">
+                            <div class="video-info">
+                                <p class="length"><%= video.length %></p>
+
+                                <% const d = new Date(video.createdAt) %>                               
+                                <% const date = moment(d).format('ll') %>   
+                                <p class="date"><%= date %></p>
+                            </div>
+                            
+                            <div class="video-button">
+                                <a class="video-button-link" href="<%= video.link %>" target="_blank">
+                                    <img src="/images/play_button.png" alt="" class="play-button">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            <% }) %>
+        <% } else { %>
+            <div class="card">
+                <div class="body-div">
+                    <h2 class="title">There are no videos to display</h2>
+                </div>
             </div>
         <% } %>
+        
     </main>
 
     <button class="showMoreBtn">Load More</button>
