@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const audioSchema = new Schema({
@@ -19,5 +19,5 @@ const audioSchema = new Schema({
 
 const Audio = mongoose.model("Audio", audioSchema);
 
-export {Audio};
+module.exports = Audio;
 

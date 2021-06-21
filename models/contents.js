@@ -1,12 +1,12 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const videoSchema = new Schema({
+const contentSchema = new Schema({
     title:{
         type: String,
         required: true,
     },
-    length:{
+    description:{
         type: String,
         required: true
     },
@@ -17,7 +17,7 @@ const videoSchema = new Schema({
 }, {timestamps: true});
 
 
-const Video = mongoose.model("Video", videoSchema);
+const Content = mongoose.model("Content", contentSchema);
 
-export {Video};
+module.exports = Content;
 

@@ -56,28 +56,30 @@
         <% } %> -->
 
         <% if (audios.length > 0) {%>
-            <% audios.forEach(audio => { %>
-                <div class="card">
-                    <div class="inner-container">
-                        <div class="audio-button">
-                            <a href="<%= audio.link %>" target="_blank">
-                                <img src="/images/multimedia.png" alt="" class="play-button">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h2 class="title">
-                                <%= audio.title %>
-                            </h2>
-                            <div class="content-info">
-                                <% const d = new Date(audio.createdAt) %>                               
-                                <% const date = moment(d).format('ll') %>   
-                                <p class="date"><%= date %></p>
+            <% audios.forEach((audio, index) => { %>
+                <% if (index < 6) { %>
+                    <div class="card">
+                        <div class="inner-container">
+                            <div class="audio-button">
+                                <a href="<%= audio.link %>" target="_blank">
+                                    <img src="/images/multimedia.png" alt="" class="play-button">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h2 class="title">
+                                    <%= audio.title %>
+                                </h2>
+                                <div class="content-info">
+                                    <% const d = new Date(audio.createdAt) %>                               
+                                    <% const date = moment(d).format('ll') %>   
+                                    <p class="date"><%= date %></p>
 
-                                <p class="length"><%= audio.length %></p>
+                                    <p class="length"><%= audio.length %></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                <% } %>
             <% }) %>
         <% } else { %>
             <div class="card">
