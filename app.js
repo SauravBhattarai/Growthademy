@@ -13,9 +13,6 @@ const videoRoutes = require('./routes/videoRoutes')
 const audioRoutes = require('./routes/audioRoutes')
 const articleRoutes = require('./routes/articleRoutes')
 
-// Assigning no of cards to show at the pages
-const cardsno = 6;
-
 // Using the static middleware
 app.use(express.static("public"));
 
@@ -33,14 +30,12 @@ app.use("/videos", videoRoutes);
 // Audio page Routes
 app.use("/audios", audioRoutes);
 
-// Articles Page Routes
-app.get("/articles", (req, res) => {
-  res.render("articles", {navSelectTitle : "articles", cardsno});
-});
+// Articles page Routes
+app.use("/articles", articleRoutes);
 
 // // Undefined Route
 app.get("*", (req, res) => {
-  res.send("Page Not Found Bitch");
+  res.send("Page Not Found");
 });
 
 // Connecting to Database and listening to server
